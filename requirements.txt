@@ -1,0 +1,11 @@
+# Direct dependencies from the Python 3.14.0 project environment.
+ipykernel==7.2.0
+ipython==9.6.0
+matplotlib==3.10.7
+numpy==2.4.2
+pylatexenc==2.10
+pyscf==2.15.1
+qiskit==2.2.3
+qiskit-algorithms==0.4.0
+qiskit-nature==0.8.0
+scipy==1.17.0
