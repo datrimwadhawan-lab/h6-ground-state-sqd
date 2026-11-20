@@ -1,6 +1,8 @@
 # Sample-Based Quantum Diagonalisation of a Stretched Hydrogen Chain
 
-For the BasQ Qiskit Fall Fest 2026 advanced challenge, I extended Benjamin Tirado’s hydrogen-molecule VQE tutorial to a linear chain of six hydrogen atoms. I sampled electron configurations from simulated quantum circuits and used a classical eigensolver to estimate the ground-state energy within the sampled space. I compared the result with early and converged UCCSD-VQE, two classical configuration-selection controls, and shallower sampling circuits.
+For the BasQ Qiskit Fall Fest 2026 advanced challenge, I extended Benjamin Tirado’s VQE tutorial to estimate the ground-state energy of a stretched six-hydrogen chain (H₆). I implemented sample-based quantum diagonalisation (SQD) in Qiskit, using simulated circuits to sample electron configurations and a classical eigensolver to find the lowest energy within that sampled space.
+
+I benchmarked SQD against UCCSD-VQE and classical configuration-selection controls. SQD reduced the gap to the full configuration interaction (FCI) reference from 69.25 mHa at the one-iteration UCCSD-VQE checkpoint to 4.72 mHa, essentially matching the converged UCCSD-VQE result of 4.74 mHa.
 
 **[Open the annotated notebook](h6_sqd.ipynb)**
 
